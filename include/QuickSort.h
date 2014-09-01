@@ -1,11 +1,11 @@
 #include <include/Sort.h>
 
-template <class T>
-class QuickSort : public Sort<T> {
+class QuickSort{
 public:
 	QuickSort();
-	virtual void doSort(T* arr, int size, int left, int right);
-	virtual ~QuickSort();
+	~QuickSort();
+
+	void doSort(int* arr, int size, int left, int right);
 private:
-	int partition(T *arr, int size, int left, int right);
+	int partition(int *arr, int size, int left, int right);
 };
